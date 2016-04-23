@@ -1,0 +1,56 @@
+
+gy=0 ;gx=0 ;gz=-9.80665
+
+Chv(1)=Froude*12 
+Chv(2)=Froude*12  
+Chv(3)=Froude*35
+
+
+Lx=15*landa  !15.0*Landa  !225  
+Ly=Froude*118.2 !10*Chv(2) 
+lz=Froude*60    !!Froude*200 !0.4*Landa   !162.5-40.0
+
+Bp(1,1)=4*landa
+Bp(1,2)=0.5*Ly
+Bp(1,3)=Froude*(-2)  !Froude*(104)  !2.0/7.0*Landa  !0.5*landa
+
+
+
+
+
+zfree=Froude*30  !Froude*150   !Bp(1,3)+Froude*2.0    !    150.0 !149.6   !126.25  !!133       
+ 
+                
+tstepE=100000  !400000
+dt=sqrt(Froude)*0.003  !*0.01  !sqrt(Froude)*0.005 !0.00125 !0.005  !sqrt(Froude)*0.0025  !sqrt(Froude)*0.01 !  !.005
+plot=500 !500  !50   !200
+
+
+roair=1.d0
+rodrop=1000.0   !1025.0
+
+miudrop=rodrop*10.0**(-6) 
+miuair=roair*10.0**(-6) 
+
+isolver=1          
+Iterate=2
+
+beta=1.2
+pdif=Froude*0.1  !1.0 !10 !0.01 !1 !100.0 !0.1 !! I am not sure about Froude scaling 
+maxSor=3000 
+
+SavMin=60*5.0
+
+print_resid=.true.
+toler=0.001             !! it shouold be also defined in the subroutine becasue it is inout 
+mxmatvec=1000           !! it shouold be also defined in the subroutine becasue it is inout 
+nonzero_x=.true. 
+maxError = 1d-3
+maxIteration = 30
+
+tpstar=1 !to just goes in the loops
+!!! eps and gap needs to be checked 
+
+ 
+
+

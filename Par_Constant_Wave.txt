@@ -1,0 +1,47 @@
+GageN=14
+Allocate (XGage(GageN),YGage(GageN),ZGage(GageN))
+
+hait=Froude*30  !150 !149.6 
+wavegen=2              !! no wave 
+UCurrent=0
+HH=Froude*0.33*6   !9.0  !10.0 !10.0
+
+H13=Froude*8
+T1=sqrt(Froude)*10
+OmegaMin=1.0/sqrt(Froude)*0.35
+OmegaMax=1.0/sqrt(Froude)*2
+Sample=1000
+
+
+XGage(1)=0
+XGage(2)=landa
+Xgage(3)=2.0*landa
+XGage(4)=3.0*landa
+XGage(5)=3.5*landa
+XGage(6)=5.0*landa
+XGage(7)=lx-Froude*200
+
+XGage(8)= XGage(1)
+XGage(9)= XGage(2)
+Xgage(10)=XGage(3)
+XGage(11)=XGage(4)
+XGage(12)=XGage(5)
+XGage(13)=XGage(6)
+XGage(14)=XGage(7)
+YGage(1)=  0.5*ly
+YGage(2)=  0.5*ly
+YGage(3)=  0.5*ly
+YGage(4)=  0.5*ly
+YGage(5)=  0.5*ly
+YGage(6)=  0.5*ly
+YGage(7)=  0.5*ly
+
+YGage(8)= 0.25*ly
+YGage(9)= 0.25*ly
+YGage(10)=0.25*ly
+YGage(11)=0.25*ly
+YGage(12)=0.25*ly
+YGage(13)=0.25*ly
+YGage(14)=0.25*ly
+    
+ 

@@ -1,0 +1,10 @@
+
+CountPlot=0
+tstepS=1
+Force(1)=0
+Force(2)=0
+Force(3)=0 !-25811178.7829174
+Mom(1)=0
+Mom(2)=0
+Mom(3)=0
+
